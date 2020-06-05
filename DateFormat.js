@@ -25,8 +25,9 @@ function format(date, str) {
     hours,
     minutes,
     seconds,
-    result,
-    str = str.toLocaleLowerCase()
+    result;
+  
+  str = str.toLocaleLowerCase()
 
   year = date.getFullYear();
   month = date.getMonth();
@@ -55,3 +56,5 @@ function format(date, str) {
   return result;
 
 }
+
+export default format
